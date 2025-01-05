@@ -4,7 +4,7 @@ const projects = [
   {
     title: "Stay-Vista",
     description: "A travel booking website",
-    image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
+    image: "/vista.jpeg",
     technologies: ["React", "Tailwind CSS"],
     githubUrl: "https://github.com/chistym17/vista",
     liveUrl: "https://vista-omega.vercel.app/",
@@ -12,7 +12,7 @@ const projects = [
   {
     title: "Docu-Mind",
     description: "A document parser and summarizer",
-    image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=600&h=400&fit=crop",
+    image: "/documind.jpeg",
     technologies: ["React", "Node.js", "MongoDB"],
     githubUrl: "https://github.com/chistym17/document-parser-backend",
     liveUrl: "https://task-manager-demo.com",
@@ -20,7 +20,7 @@ const projects = [
   {
     title: "Youvid",
     description: "A simple youtube clone",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop",
+    image: "/youvid.jpeg",
     technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
     githubUrl: "https://github.com/chistym17/YouVid",
     liveUrl: "https://you-r9xtoff8e-chisty17s-projects.vercel.app/",

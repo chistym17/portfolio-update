@@ -11,7 +11,7 @@ const Index = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-secondary">
+    <div className="min-h-screen bg-[#141414]">
       {isMobile && (
         <button
           onClick={() => setIsSidebarOpen(!isSidebarOpen)}

@@ -37,7 +37,7 @@ const projects = [
 
 export const ProjectGrid = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-6">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 px-4 md:px-8 max-w-7xl mx-auto">
       {projects.map((project) => (
         <ProjectCard key={project.title} {...project} />
       ))}

@@ -14,43 +14,49 @@ interface ProjectCardProps {
 
 export const ProjectCard = ({ title, description, image, technologies, githubUrl, liveUrl }: ProjectCardProps) => {
   return (
-    <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg w-full max-w-2xl mx-auto">
-      <div className="h-48 sm:h-56 md:h-64 overflow-hidden">
+    <div className="group relative overflow-hidden rounded-xl bg-[#1a1a1a] p-4 transition-all hover:scale-[1.02] hover:shadow-xl hover:shadow-black/30">
+      <div className="aspect-video w-full overflow-hidden rounded-lg">
         <img
           src={image}
           alt={title}
-          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
         />
       </div>
-      <CardHeader>
-        <CardTitle className="text-lg sm:text-xl">{title}</CardTitle>
-        <CardDescription className="text-sm sm:text-base">{description}</CardDescription>
-      </CardHeader>
-      <CardContent>
+      
+      <div className="mt-4 space-y-3">
+        <h3 className="text-xl font-semibold text-gray-100">{title}</h3>
+        <p className="text-gray-400">{description}</p>
+        
         <div className="flex flex-wrap gap-2">
           {technologies.map((tech) => (
-            <Badge key={tech} variant="secondary">
+            <span 
+              key={tech} 
+              className="rounded-full bg-[#252525] px-3 py-1 text-sm text-gray-300"
+            >
               {tech}
-            </Badge>
+            </span>
           ))}
         </div>
-      </CardContent>
-      <CardFooter className="flex justify-end gap-2 pt-4">
-        {githubUrl && (
-          <Button variant="ghost" size="icon" asChild>
-            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-              <Github className="h-5 w-5" />
-            </a>
-          </Button>
-        )}
-        {liveUrl && (
-          <Button variant="ghost" size="icon" asChild>
-            <a href={liveUrl} target="_blank" rel="noopener noreferrer">
-              <ExternalLink className="h-5 w-5" />
-            </a>
-          </Button>
-        )}
-      </CardFooter>
-    </Card>
+        
+        <div className="flex gap-4 pt-2">
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-sm text-gray-400 hover:text-white transition-colors"
+          >
+            GitHub →
+          </a>
+          <a
+            href={liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-sm text-gray-400 hover:text-white transition-colors"
+          >
+            Live Demo →
+          </a>
+        </div>
+      </div>
+    </div>
   );
 };

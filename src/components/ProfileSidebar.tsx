@@ -14,14 +14,14 @@ export const ProfileSidebar = () => {
         </div>
         
         <div className="text-center space-y-2">
-          <h1 className="text-2xl font-bold tracking-tight">John Doe</h1>
+          <h1 className="text-2xl font-bold tracking-tight">Mynuddin Chisty</h1>
           <p className="text-[#cec2bd] font-medium">Full Stack Developer</p>
         </div>
 
         <div className="w-full h-px bg-gradient-to-r from-transparent via-[#453a36] to-transparent" />
         
         <p className="text-sm text-[#cec2bd] text-center leading-relaxed">
-          Passionate developer crafting beautiful and functional web experiences
+          SDE Intern at MindtideAI, USA | Building modern web experiences and AI chatbots
         </p>
 
         <div className="flex gap-4">

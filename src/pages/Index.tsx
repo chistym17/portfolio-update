@@ -5,6 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Menu } from "lucide-react";
 import { useState } from "react";
+import { AboutMe } from "@/components/AboutMe";
 
 const Index = () => {
   const isMobile = useIsMobile();
@@ -46,7 +47,7 @@ const Index = () => {
             <div className="w-full max-w-7xl mx-auto">
               <TabsContent value="about" className="mt-6">
                 <h2 className="text-3xl font-bold mb-8 text-secondary-foreground">About Me</h2>
-                {/* Add your About Me component here */}
+                <AboutMe />
               </TabsContent>
               <TabsContent value="projects" className="mt-6">
                 <h2 className="text-3xl font-bold mb-8 text-secondary-foreground">My Projects</h2>

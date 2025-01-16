@@ -2,22 +2,16 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 const experiences = [
   {
-    title: "Senior Full Stack Developer",
-    company: "Tech Solutions Inc.",
-    period: "2020 - Present",
-    description: "Led development of enterprise applications using React and Node.js. Managed team of 5 developers and implemented CI/CD pipelines.",
-  },
-  {
-    title: "Full Stack Developer",
-    company: "Digital Innovations",
-    period: "2018 - 2020",
-    description: "Developed and maintained multiple web applications. Worked with React, TypeScript, and AWS services.",
-  },
-  {
-    title: "Frontend Developer",
-    company: "WebTech Studios",
-    period: "2016 - 2018",
-    description: "Created responsive web interfaces using React and Redux. Collaborated with UX designers to implement pixel-perfect designs.",
+    title: "Full Stack Developer (Intern)",
+    company: "MindtideAI",
+    period: "October 2024 - Present",
+    description: [
+      "Led the development of third-party integrations for SiteBot (AI Chatbot), successfully implementing Zendesk, Zoho, and Google Chat integrations",
+      "Enhanced crawler performance by optimizing sitemap fetching and implementing support for both static and dynamic websites",
+      "Architected and implemented AI agents workflow to improve chatbot response quality and follow-up question capabilities",
+      "Developed specialized chatbot variants for lead generation and sales automation",
+      "Designed and built responsive integration interfaces and customizable bot appearance settings",
+    ],
   },
 ];
 
@@ -25,15 +19,26 @@ export const Experience = () => {
   return (
     <div className="grid gap-6 p-6">
       {experiences.map((exp, index) => (
-        <Card key={index} className="animate-fade-in">
-          <CardHeader>
-            <CardTitle className="text-xl font-bold">{exp.title}</CardTitle>
-            <div className="text-sm text-muted-foreground">
-              {exp.company} • {exp.period}
+        <Card key={index} className="animate-fade-in border border-zinc-800 bg-zinc-900/50">
+          <CardHeader className="space-y-4">
+            <div className="space-y-1">
+              <CardTitle className="text-xl font-bold text-white">
+                {exp.title}
+              </CardTitle>
+              <div className="text-sm text-emerald-400 font-medium">
+                {exp.company} • {exp.period}
+              </div>
             </div>
           </CardHeader>
           <CardContent>
-            <p className="text-secondary-foreground">{exp.description}</p>
+            <ul className="space-y-3">
+              {exp.description.map((item, i) => (
+                <li key={i} className="flex gap-2 text-gray-300">
+                  <span className="text-emerald-400 mt-1">•</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </CardContent>
         </Card>
       ))}

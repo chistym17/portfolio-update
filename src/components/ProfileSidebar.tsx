@@ -29,29 +29,44 @@ export const ProfileSidebar = () => {
             variant="ghost" 
             size="icon" 
             className="hover:bg-[#453a36] text-[#cec2bd] hover:text-white transition-colors"
+            asChild
           >
-            <Github className="h-5 w-5" />
+            <a href="https://github.com/chistym17" target="_blank" rel="noopener noreferrer">
+              <Github className="h-5 w-5" />
+            </a>
           </Button>
+          
           <Button 
             variant="ghost" 
             size="icon" 
             className="hover:bg-[#453a36] text-[#cec2bd] hover:text-white transition-colors"
+            asChild
           >
-            <Linkedin className="h-5 w-5" />
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="h-5 w-5" />
+            </a>
           </Button>
+          
           <Button 
             variant="ghost" 
             size="icon" 
             className="hover:bg-[#453a36] text-[#cec2bd] hover:text-white transition-colors"
+            asChild
           >
-            <Twitter className="h-5 w-5" />
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <Twitter className="h-5 w-5" />
+            </a>
           </Button>
+          
           <Button 
             variant="ghost" 
             size="icon" 
             className="hover:bg-[#453a36] text-[#cec2bd] hover:text-white transition-colors"
+            asChild
           >
-            <Mail className="h-5 w-5" />
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <Mail className="h-5 w-5" />
+            </a>
           </Button>
         </div>
       </div>

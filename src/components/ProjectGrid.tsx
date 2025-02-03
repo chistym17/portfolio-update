@@ -38,12 +38,12 @@ const projects = {
   ],
   mlmodels: [
     {
-      title: "Sentiment Analyzer",
-      description: "LSTM-based sentiment analysis model",
-      image: "/sentiment.jpeg",
-      technologies: ["Python", "TensorFlow", "NLTK", "Flask"],
-      githubUrl: "https://github.com/yourusername/sentiment-analyzer",
-      liveUrl: "https://sentiment-demo.herokuapp.com",
+      title: "ANN Model",
+      description: "A simple ANN model",
+      image: "/ml/ann.png",
+      technologies: ["Python", "TensorFlow", "Streamlit"],
+      githubUrl: "https://github.com/chistym17/ANN-implementation",
+      liveUrl: "https://ann-implementation.streamlit.app",
     },
     {
       title: "Image Classifier",

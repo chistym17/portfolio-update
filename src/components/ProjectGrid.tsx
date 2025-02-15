@@ -56,20 +56,18 @@ const projects = {
   ],
   prototypes: [
     {
-      title: "CLI Task Manager",
-      description: "Command-line productivity tool",
+      title: "CLI to search for words",
+      description: "Command-line tool to search for words",
       image: "/cli-tool.jpeg",
-      technologies: ["Python", "Click", "SQLite"],
-      githubUrl: "https://github.com/yourusername/cli-task-manager",
-      liveUrl: "https://www.npmjs.com/package/cli-task-manager",
+      technologies: ["Rust"],
+      githubUrl: "https://github.com/chistym17/CLI-in-rust",
     },
     {
       title: "Redis Cache Implementation",
       description: "Custom caching system prototype",
       image: "/redis-proto.jpeg",
-      technologies: ["Node.js", "Redis", "Express"],
-      githubUrl: "https://github.com/yourusername/redis-cache-proto",
-      liveUrl: "https://redis-proto-demo.herokuapp.com",
+      technologies: ["Rust"],
+      githubUrl: "https://github.com/chistym17/Redis-Prototype--in-rust",
     }
   ],
 };

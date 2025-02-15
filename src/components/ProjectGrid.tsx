@@ -46,12 +46,12 @@ const projects = {
       liveUrl: "https://ann-implementation.streamlit.app",
     },
     {
-      title: "Image Classifier",
-      description: "CNN implementation for image classification",
-      image: "/classifier.jpeg",
-      technologies: ["Python", "PyTorch", "OpenCV"],
-      githubUrl: "https://github.com/yourusername/image-classifier",
-      liveUrl: "https://classifier-demo.herokuapp.com",
+      title: "RNN Model",
+      description: "RNN implementation for sentiment analysis",
+      image: "/ml/rnn.png",
+      technologies: ["Python", "TensorFlow", "Streamlit",'word2vec'],
+      githubUrl: "https://github.com/chistym17/RNN-model",
+      liveUrl: "https://rnn-model.streamlit.app",
     }
   ],
   prototypes: [

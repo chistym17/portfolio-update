@@ -21,7 +21,7 @@ const projects = {
     },
     {
       title: "Task Manager",
-      description: "A collaborative task management platform",
+      description: "A  task management platform",
       image: "/task-manager.jpeg",
       technologies: ["React", "Express", "MongoDB", "Socket.io"],
       githubUrl: "https://github.com/yourusername/task-manager",
@@ -49,7 +49,7 @@ const projects = {
       title: "RNN Model",
       description: "RNN implementation for sentiment analysis",
       image: "/ml/rnn.png",
-      technologies: ["Python", "TensorFlow", "Streamlit",'word2vec'],
+      technologies: ["Python", "TensorFlow", "Streamlit", 'word2vec'],
       githubUrl: "https://github.com/chistym17/RNN-model",
       liveUrl: "https://rnn-model.streamlit.app",
     }
@@ -88,11 +88,10 @@ export const ProjectGrid = () => {
           <button
             key={key}
             onClick={() => setActiveCategory(key as keyof typeof projects)}
-            className={`px-4 py-2 rounded-lg transition-colors ${
-              activeCategory === key
+            className={`px-4 py-2 rounded-lg transition-colors ${activeCategory === key
                 ? "bg-blue-600 text-white"
                 : "bg-gray-200 hover:bg-gray-300 text-gray-800"
-            }`}
+              }`}
           >
             {label}
           </button>

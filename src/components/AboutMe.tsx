@@ -8,7 +8,7 @@ export const AboutMe = () => {
         <div className="space-y-4">
           <h1 className="text-4xl font-bold text-white">Hi, I&apos;m Chisty</h1>
           <p className="text-lg text-gray-300">
-            I am Mynuddin Chisty, a passionate Full Stack Developer specializing in modern web technologies.
+            I am Mynuddin Chisty, a Full Stack Developer specializing in modern web technologies.
           </p>
         </div>
 
@@ -33,7 +33,7 @@ export const AboutMe = () => {
             <span className="text-primary">•</span>
             Learning Machine Learning and exploring Open Source
           </li>
-     
+
         </ul>
 
         <div className="flex gap-4 pt-4">

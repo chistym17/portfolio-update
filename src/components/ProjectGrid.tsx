@@ -20,12 +20,12 @@ const projects = {
       liveUrl: "https://task-manager-demo.com",
     },
     {
-      title: "Task Manager",
-      description: "A  task management platform",
-      image: "/task-manager.jpeg",
+      title: "Gradia",
+      description: "A platform for students and teachers to manage their assignments and projects",
+      image: "/gradia.jpeg",
       technologies: ["React", "Express", "MongoDB", "Socket.io"],
-      githubUrl: "https://github.com/yourusername/task-manager",
-      liveUrl: "https://task-manager-demo.vercel.app",
+      githubUrl: "https://github.com/chistym17/gradia",
+      liveUrl: "https://gradia-ochre.vercel.app/",
     },
     {
       title: "E-Learning Platform",

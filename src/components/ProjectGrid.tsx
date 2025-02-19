@@ -10,6 +10,7 @@ const projects = {
       technologies: ["React", "Tailwind CSS", "Nodejs", "MongoDB", "Express"],
       githubUrl: "https://github.com/chistym17/vista",
       liveUrl: "https://vista-omega.vercel.app/",
+      order: 1
     },
     {
       title: "Docu-Mind",
@@ -18,6 +19,7 @@ const projects = {
       technologies: ["React", "Node.js", "MongoDB"],
       githubUrl: "https://github.com/chistym17/document-parser-backend",
       liveUrl: "https://task-manager-demo.com",
+      order: 3
     },
     {
       title: "Gradia",
@@ -26,14 +28,25 @@ const projects = {
       technologies: ["React", "Express", "MongoDB", "Socket.io"],
       githubUrl: "https://github.com/chistym17/gradia",
       liveUrl: "https://gradia-ochre.vercel.app/",
+      order: 2
     },
     {
-      title: "E-Learning Platform",
-      description: "An interactive learning management system",
-      image: "/elearning.jpeg",
+      title: "You-Tube Clone",
+      description: "A clone of the popular video-sharing platform",
+      image: "/youvid.jpeg",
       technologies: ["React", "Node.js", "PostgreSQL", "Redis"],
-      githubUrl: "https://github.com/yourusername/elearning",
-      liveUrl: "https://elearning-demo.vercel.app",
+      githubUrl: "https://github.com/chistym17/YouVid",
+      liveUrl: "https://youvid-omega.vercel.app/",
+      order: 4
+    },
+    {
+      title: "skyla",
+      description: "A simple chat application",
+      image: "/skyla.jpeg",
+      technologies: ["React", "Node.js", "PostgreSQL", "Redis"],
+      githubUrl: "https://github.com/chistym17/skyla-app",
+      liveUrl: "https://skyla-7t80.onrender.com/",
+      order: 5
     }
   ],
   mlmodels: [
@@ -44,6 +57,7 @@ const projects = {
       technologies: ["Python", "TensorFlow", "Streamlit"],
       githubUrl: "https://github.com/chistym17/ANN-implementation",
       liveUrl: "https://ann-implementation.streamlit.app",
+      order: 1
     },
     {
       title: "RNN Model",
@@ -58,14 +72,15 @@ const projects = {
     {
       title: "CLI to search for words",
       description: "Command-line tool to search for words",
-      image: "/cli-tool.jpeg",
+      image: "/cli.jpeg",
       technologies: ["Rust"],
       githubUrl: "https://github.com/chistym17/CLI-in-rust",
+      order: 1
     },
     {
       title: "Redis Cache Implementation",
       description: "Custom caching system prototype",
-      image: "/redis-proto.jpeg",
+      image: "/redis.jpeg",
       technologies: ["Rust"],
       githubUrl: "https://github.com/chistym17/Redis-Prototype--in-rust",
     }
@@ -99,9 +114,11 @@ export const ProjectGrid = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10">
-        {projects[activeCategory].map((project) => (
-          <ProjectCard key={project.title} {...project} />
-        ))}
+        {projects[activeCategory]
+          .sort((a, b) => a.order - b.order)
+          .map((project) => (
+            <ProjectCard key={project.title} {...project} />
+          ))}
       </div>
     </div>
   );

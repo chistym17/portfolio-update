@@ -14,27 +14,27 @@ const projects = {
     },
     {
       title: "Docu-Mind",
-      description: "A document parser and summarizer",
+      description: "A text,image extraction tool",
       image: "/documind.jpeg",
-      technologies: ["React", "Node.js", "MongoDB"],
+      technologies: ["Next.js", "FastAPI","python", "MongoDB"],
       githubUrl: "https://github.com/chistym17/document-parser-backend",
-      liveUrl: "https://task-manager-demo.com",
+      liveUrl: "https://document-parser-ten.vercel.app/",
       order: 3
     },
     {
       title: "Gradia",
       description: "A platform for students and teachers to manage their assignments and projects",
       image: "/gradia.jpeg",
-      technologies: ["React", "Express", "MongoDB", "Socket.io"],
+      technologies: ["React", "Express", "MongoDB", "Nodejs"],
       githubUrl: "https://github.com/chistym17/gradia",
       liveUrl: "https://gradia-ochre.vercel.app/",
       order: 2
     },
     {
-      title: "You-Tube Clone",
+      title: "YouVid",
       description: "A clone of the popular video-sharing platform",
       image: "/youvid.jpeg",
-      technologies: ["React", "Node.js", "PostgreSQL", "Redis"],
+      technologies: ["javascript", "html", "css"],
       githubUrl: "https://github.com/chistym17/YouVid",
       liveUrl: "https://polite-semifreddo-b98601.netlify.app/",
       order: 4
@@ -43,7 +43,7 @@ const projects = {
       title: "skyla",
       description: "A simple chat application",
       image: "/skyla.jpeg",
-      technologies: ["React", "Node.js", "PostgreSQL", "Redis"],
+      technologies: ["React", "Node.js", "MongoDB", "socket.io"],
       githubUrl: "https://github.com/chistym17/skyla-app",
       liveUrl: "https://skyla-7t80.onrender.com/",
       order: 5
@@ -52,7 +52,7 @@ const projects = {
       title: "czscup",
       description: "A football organization website",
       image: "/czs.jpeg",
-      technologies: ["React", "Node.js", "PostgreSQL", "Redis"],
+      technologies: ["next.js", "Node.js", "MongoDB", "Express"],
       githubUrl: "https://github.com/chistym17/czs-frontend",
       liveUrl: "https://czs-frontend-git-farhan-chisty17s-projects.vercel.app/",
       order: 6

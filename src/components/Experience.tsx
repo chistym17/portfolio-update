@@ -5,6 +5,7 @@ const experiences = [
     title: "Full Stack Developer (Intern)",
     company: "MindtideAI",
     period: "October 2024 - Present",
+    techStack: ["Python", "FastAPI", "Next.js", "MongoDB", "AWS"],
     description: [
       "Led the development of third-party integrations for SiteBot (AI Chatbot), successfully implementing Zendesk, Zoho, and Google Chat integrations",
       "Enhanced crawler performance by optimizing sitemap fetching and implementing support for both static and dynamic websites",
@@ -25,8 +26,18 @@ export const Experience = () => {
               <CardTitle className="text-xl font-bold text-white">
                 {exp.title}
               </CardTitle>
-              <div className="text-sm text-white font-medium">
+              <div className="text-sm text-white font-medium mb-2">
                 {exp.company} • {exp.period}
+              </div>
+              <div className="flex flex-wrap gap-2 mt-5">
+                {exp.techStack.map((tech, i) => (
+                  <span
+                    key={i}
+                    className="px-2 py-1 text-xs font-medium rounded-full bg-blue-500/10 text-blue-400"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
             </div>
           </CardHeader>

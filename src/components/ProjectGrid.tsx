@@ -36,7 +36,7 @@ const projects = {
       image: "/youvid.jpeg",
       technologies: ["React", "Node.js", "PostgreSQL", "Redis"],
       githubUrl: "https://github.com/chistym17/YouVid",
-      liveUrl: "https://youvid-omega.vercel.app/",
+      liveUrl: "https://polite-semifreddo-b98601.netlify.app/",
       order: 4
     },
     {
@@ -47,6 +47,15 @@ const projects = {
       githubUrl: "https://github.com/chistym17/skyla-app",
       liveUrl: "https://skyla-7t80.onrender.com/",
       order: 5
+    },
+    {
+      title: "czscup",
+      description: "A football organization website",
+      image: "/czs.jpeg",
+      technologies: ["React", "Node.js", "PostgreSQL", "Redis"],
+      githubUrl: "https://github.com/chistym17/czs-frontend",
+      liveUrl: "https://czs-frontend-git-farhan-chisty17s-projects.vercel.app/",
+      order: 6
     }
   ],
   mlmodels: [

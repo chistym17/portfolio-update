@@ -27,11 +27,11 @@ export const AboutMe = () => {
           </li>
           <li className="flex items-center gap-2">
             <span className="text-primary">•</span>
-            Student of Computer Science Engineering, Second year
+            Student of Computer Science Engineering
           </li>
           <li className="flex items-center gap-2">
             <span className="text-primary">•</span>
-            Learning Machine Learning and exploring Open Source
+            Learning Machine Learning and Generative AI
           </li>
 
         </ul>
@@ -40,10 +40,6 @@ export const AboutMe = () => {
           <Button className="flex items-center gap-2">
             <FileDown className="h-4 w-4" />
             Download Resume
-          </Button>
-          <Button variant="outline" className="flex items-center gap-2">
-            <Mail className="h-4 w-4" />
-            Send Email
           </Button>
         </div>
       </div>

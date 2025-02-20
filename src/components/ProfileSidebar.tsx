@@ -53,21 +53,12 @@ export const ProfileSidebar = () => {
             className="hover:bg-[#453a36] text-[#cec2bd] hover:text-white transition-colors"
             asChild
           >
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/mchistyy" target="_blank" rel="noopener noreferrer">
               <Twitter className="h-5 w-5" />
             </a>
           </Button>
           
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            className="hover:bg-[#453a36] text-[#cec2bd] hover:text-white transition-colors"
-            asChild
-          >
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <Mail className="h-5 w-5" />
-            </a>
-          </Button>
+      
         </div>
       </div>
     </div>

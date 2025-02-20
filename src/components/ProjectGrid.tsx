@@ -58,25 +58,25 @@ const projects = {
       order: 6
     }
   ],
-  mlmodels: [
-    {
-      title: "ANN Model",
-      description: "A simple ANN model",
-      image: "/ml/ann.png",
-      technologies: ["Python", "TensorFlow", "Streamlit"],
-      githubUrl: "https://github.com/chistym17/ANN-implementation",
-      liveUrl: "https://ann-implementation.streamlit.app",
-      order: 1
-    },
-    {
-      title: "RNN Model",
-      description: "RNN implementation for sentiment analysis",
-      image: "/ml/rnn.png",
-      technologies: ["Python", "TensorFlow", "Streamlit", 'word2vec'],
-      githubUrl: "https://github.com/chistym17/RNN-model",
-      liveUrl: "https://rnn-model.streamlit.app",
-    }
-  ],
+  // mlmodels: [
+  //   {
+  //     title: "ANN Model",
+  //     description: "A simple ANN model",
+  //     image: "/ml/ann.png",
+  //     technologies: ["Python", "TensorFlow", "Streamlit"],
+  //     githubUrl: "https://github.com/chistym17/ANN-implementation",
+  //     liveUrl: "https://ann-implementation.streamlit.app",
+  //     order: 1
+  //   },
+  //   {
+  //     title: "RNN Model",
+  //     description: "RNN implementation for sentiment analysis",
+  //     image: "/ml/rnn.png",
+  //     technologies: ["Python", "TensorFlow", "Streamlit", 'word2vec'],
+  //     githubUrl: "https://github.com/chistym17/RNN-model",
+  //     liveUrl: "https://rnn-model.streamlit.app",
+  //   }
+  // ],
   prototypes: [
     {
       title: "CLI to search for words",
@@ -98,7 +98,6 @@ const projects = {
 
 const categories = {
   fullstack: "Full-Stack Applications",
-  mlmodels: "ML Model Implementations",
   prototypes: "Prototypes & System Design",
 };
 

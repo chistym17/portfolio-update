@@ -4,6 +4,7 @@ const experiences = [
   {
     title: "Full Stack Developer (Intern)",
     company: "MindtideAI",
+    location: "USA",
     period: "October 2024 - Present",
     techStack: ["Python", "FastAPI", "Next.js", "MongoDB", "AWS"],
     description: [
@@ -21,15 +22,15 @@ export const Experience = () => {
     <div className="grid gap-6 p-6">
       {experiences.map((exp, index) => (
         <Card key={index} className="animate-fade-in border border-zinc-800 bg-zinc-900/50">
-          <CardHeader className="space-y-4">
-            <div className="space-y-1">
+          <CardHeader className="space-y-6">
+            <div className="space-y-4">
               <CardTitle className="text-xl font-bold text-white">
                 {exp.title}
               </CardTitle>
-              <div className="text-sm text-white font-medium mb-2">
-                {exp.company} • {exp.period}
+              <div className="text-sm text-white font-medium">
+                {exp.company} • {exp.location} • {exp.period}
               </div>
-              <div className="flex flex-wrap gap-2 mt-5">
+              <div className="flex flex-wrap gap-2 pt-2">
                 {exp.techStack.map((tech, i) => (
                   <span
                     key={i}

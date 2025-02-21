@@ -16,7 +16,7 @@ const projects = {
       title: "Docu-Mind",
       description: "A text,image extraction tool",
       image: "/documind.jpeg",
-      technologies: ["Next.js", "FastAPI","python", "MongoDB"],
+      technologies: ["Next.js", "FastAPI", "python", "MongoDB"],
       githubUrl: "https://github.com/chistym17/document-parser-backend",
       liveUrl: "https://document-parser-ten.vercel.app/",
       order: 3
@@ -32,7 +32,7 @@ const projects = {
     },
     {
       title: "YouVid",
-      description: "A clone of the popular video-sharing platform",
+      description: "A simple clone of Youtube",
       image: "/youvid.jpeg",
       technologies: ["javascript", "html", "css"],
       githubUrl: "https://github.com/chistym17/YouVid",
@@ -112,8 +112,8 @@ export const ProjectGrid = () => {
             key={key}
             onClick={() => setActiveCategory(key as keyof typeof projects)}
             className={`px-4 py-2 rounded-lg transition-colors ${activeCategory === key
-                ? "bg-blue-600 text-white"
-                : "bg-gray-200 hover:bg-gray-300 text-gray-800"
+              ? "bg-blue-600 text-white"
+              : "bg-gray-200 hover:bg-gray-300 text-gray-800"
               }`}
           >
             {label}

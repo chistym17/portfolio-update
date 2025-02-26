@@ -14,7 +14,7 @@ const projects = {
     },
     {
       title: "Docu-Mind",
-      description: "A text,image extraction tool",
+      description: "A text,image,link extraction tool",
       image: "/documind.jpeg",
       technologies: ["Next.js", "FastAPI", "python", "MongoDB"],
       githubUrl: "https://github.com/chistym17/document-parser-backend",
@@ -50,7 +50,7 @@ const projects = {
     },
     {
       title: "czscup",
-      description: "A football organization website",
+      description: "A football organization website for a college",
       image: "/czs.jpeg",
       technologies: ["next.js", "Node.js", "MongoDB", "Express"],
       githubUrl: "https://github.com/chistym17/czs-frontend",

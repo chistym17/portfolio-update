@@ -7,7 +7,7 @@ export const ProfileSidebar = () => {
       <div className="flex flex-col items-center space-y-6">
         <div className="w-32 h-32 rounded-full overflow-hidden ring-2 ring-[#453a36] ring-offset-2 ring-offset-[#241f1d]">
           <img
-            src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop"
+            src="/profile.jpeg"
             alt="Profile"
             className="w-full h-full object-cover"
           />
